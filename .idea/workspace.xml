@@ -5,7 +5,6 @@
       <change afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/components/approach.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/components/footer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/particles.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/js/particle.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../outpass/hodloginroutes.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../outpass/static/css/main-page.css" afterDir="false" />
@@ -15,6 +14,10 @@
       <change afterPath="$PROJECT_DIR$/../outpass/views/main_page.ejs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../outpass/views/requestsToHod.ejs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../outpass/views/studentForm.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/particles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/particles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../bootstrap-4.3.1-dist/css/bootstrap-grid.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../bootstrap-4.3.1-dist/css/bootstrap-grid.css.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../bootstrap-4.3.1-dist/css/bootstrap-grid.min.css" beforeDir="false" />
@@ -53,7 +56,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
@@ -122,7 +125,7 @@
       <workItem from="1570251907947" duration="638000" />
       <workItem from="1570255814581" duration="618000" />
       <workItem from="1570256675550" duration="20919000" />
-      <workItem from="1570337674840" duration="14505000" />
+      <workItem from="1570337674840" duration="21844000" />
     </task>
     <servers />
   </component>
@@ -141,17 +144,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/particles.js</url>
-          <line>37</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

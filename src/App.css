@@ -9,6 +9,10 @@ html {
   height: 100%;
 }
 
+.row {
+  padding: 2vh;
+}
+
 #particles-js {
   width: 100%;
   height: 100vh;
@@ -29,12 +33,66 @@ opacity: 1;
 transition: opacity .8s ease, transform 1.4s ease
 }
 
-.intro-desc {
-  margin-top: 10vh;
+/*account dropdown*/
+.dropdown-menu {
+  margin-top: 0;
+  padding: 20px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  display: block;
+  background: transparent;
+  border: none;
+  transform: scale(0);
+  transition: ease-out 0.3s;
 }
 
-.navigation {
-  margin-bottom: 10vh;
+.dropdown-menu a {
+  /*text-decoration: none;*/
+  color: white;
+  line-height: 4vh;
+}
+
+a.dropdown-toggle {
+  text-decoration: none;
+  color: white;
+}
+
+.dropdown:hover .dropdown-menu {
+  transform: scale(1);
+}
+
+.dropdown-menu1
+{
+  display: block;
+  transform: scale(1)!important;
+  height: max-content;
+  overflow: hidden;
+  padding: 10rem;
+  top: 180px;
+  transition: all .3s;
+}
+
+.dropdown:hover .dropdown-menu1
+{
+  display: block;
+  top: 100%;
+  height: inherit;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card-title {
+  font-weight: 500;
+  font-size: x-large;
+}
+
+.card-header {
+  font-size: xx-large;
+  font-weight: 600;
 }
 
 .intro, .approach{
@@ -67,15 +125,29 @@ transition: opacity .8s ease, transform 1.4s ease
   display: flex;
 }
 
-svg {
+.logo svg {
   border-radius: 10px;
   border: 2px solid white;
   padding: 5px
 }
 
 .navigation-container {
-  display: flex;
+  display: inline-flex;
   justify-content: space-evenly;
+}
+
+.navigation-container input[type=text]  {
+  border: none;
+  border-bottom: 1px solid green ;
+  background-color: transparent;
+}
+
+.navigation-container input, select, textarea{
+  color: darkgray;
+}
+
+textarea:focus, input:focus {
+  color: #ffffff;
 }
 
 .navigation button {
@@ -101,6 +173,35 @@ svg {
 }
 
 
+/*overlay effect starts here*/
+.card {
+  position: relative;
+  overflow: hidden;
+}
+.card > Card { /* ADDED THIS */
+  position: relative;
+}
+
+.card:hover .card-overlay {
+  left: 0;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  background-color: rgba(85, 211, 150, 0.6);
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: left 0.5s ease-out;
+}
+/*overlay effect ends here*/
 
 
 

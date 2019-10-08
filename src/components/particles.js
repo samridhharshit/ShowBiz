@@ -5,9 +5,11 @@ import particlesOpt from "../js/particle";
 
 import {Button} from 'reactstrap';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faUserNinja} from "@fortawesome/free-solid-svg-icons";
-import { Card, CardTitle, CardText, CardImg, CardImgOverlay } from 'reactstrap';
+import {faUserNinja, faSearch} from "@fortawesome/free-solid-svg-icons";
 
+import { Card, CardTitle, CardHeader, CardImg } from 'reactstrap';
+
+import card_image from '../images/infinity-war.jpeg';
 
 class Intro extends React.Component {
     render() {
@@ -18,36 +20,52 @@ class Intro extends React.Component {
                 </div>
                 <div className="container-fluid intro-container">
                     <div className="row navigation">
-                        <div className="col-md-6 col-sm-12 logo">
+                        <div className="col-md-4 col-sm-12 logo">
                             <div>
                                 <FontAwesomeIcon icon={faUserNinja} size="5x" />
                             </div>
-                            {/*<h1>logo</h1>*/}
                         </div>
-                        <div className="col-md-6 col-sm-12 navigation-container">
+                        <div className="col-md-8 col-sm-12 navigation-container">
+                            <div className="search">
+                            <input type="text" name="Search Movies" placeholder="Quick Search" />
+                            <FontAwesomeIcon icon={faSearch} />
+                            </div>
                             <Button>Browse Movies</Button>
                             <Button>Bookmarks</Button>
-                            <Button>Account</Button>
+                            <div className="account dropdown">
+                                <Button><a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button"
+                                   aria-haspopup="true" aria-expanded="false">Account</a></Button>
+                                <div className="dropdown-menu">
+                                    <li><a href="#">Profile</a></li>
+                                    <li><a href="#">WishList</a></li>
+                                    <li><a href="#">Cart</a></li>
+                                    <li><a href="#">Ordered</a></li>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className="row intro-desc">
                         <div className="col"></div>
                         <div className="col-md-8 col-sm-12">
+                            <div className="row section-header">
+                                <div className="col"></div>
+                                <div className="col-md-8 col-sm-12">
+                                    <h1>Latest Arrival</h1>
+                                </div>
+                                <div className="col"></div>
+                            </div>
                             <div className="row section-divider">
                                 <div className="col"></div>
-                                <div className="col-lg-8 col-md-12">
-                                    <div className="row">
-                                        <div className="col-sm-4">
+                                <div className="col-lg-10 col-md-12">
+                                    <div className="row items">
+                                        <div className="col-lg-4 col-md-3 col-sm-12">
                                             <div className="card">
                                                 <Card inverse>
-                                                    <CardImg width="100%" src="/assets/318x270.svg" alt="Card image cap" />
-                                                    <CardImgOverlay>
-                                                        <CardTitle>Card Title</CardTitle>
-                                                        <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
-                                                        <CardText>
-                                                            <small className="text-muted">Last updated 3 mins ago</small>
-                                                        </CardText>
-                                                    </CardImgOverlay>
+                                                    <CardImg width="100%" src={card_image} alt="infinity war" />
+                                                    <div className="card-overlay">
+                                                        <CardTitle>Imdb Rating</CardTitle>
+                                                        <CardHeader>6.8/10</CardHeader>
+                                                    </div>
                                                 </Card>
                                             </div>
                                         </div>
