@@ -9,6 +9,16 @@ html {
   height: 100%;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #00b8ff;
+}
+
 .row {
   padding: 2vh;
 }
@@ -85,6 +95,10 @@ a.dropdown-toggle {
   align-items: center;
 }
 
+.intro-desc {
+  margin-top: 5vh;
+}
+
 .card-title {
   font-weight: 500;
   font-size: x-large;
@@ -96,7 +110,7 @@ a.dropdown-toggle {
 }
 
 .intro, .approach{
-  height: 100vh;
+  height: max-content;
 }
 
 
@@ -116,7 +130,7 @@ a.dropdown-toggle {
 }
 
 .navigation {
-  padding: 10vh 30vh 0 30vh;
+  padding: 10vh 30vh 5vh 30vh;
   display: flex;
   align-items: baseline;
 }
@@ -172,6 +186,9 @@ textarea:focus, input:focus {
   color: #4adada;
 }
 
+.section-header h1 {
+  font-family: Chilanka,sans-serif;
+}
 
 /*overlay effect starts here*/
 .card {
@@ -190,7 +207,7 @@ textarea:focus, input:focus {
   position: absolute;
   top: 0;
   left: -100%;
-  background-color: rgba(85, 211, 150, 0.6);
+  background-color: rgba(85, 211, 150, 0.9);
   color: #fff;
   height: 100%;
   width: 100%;
@@ -203,12 +220,138 @@ textarea:focus, input:focus {
 }
 /*overlay effect ends here*/
 
+.footer-container .logo, .about {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-inline-start: auto;
+}
 
+.footer-container .logo  h3 {
+  font-family: DejaVu,Serif,Condensed,sans-serif;
+}
 
+.footer-container .contact h6, .about h6, span {
+  font-family: Overpass,Helvetica,sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: .75em;
+  letter-spacing: 1.75px;
+  margin-bottom: 30px;
+}
 
+.footer-container .contact h6, .about h6 {
+  color: #4adada;
+}
 
+.footer-container .about span {
+  margin-bottom: 0;
+}
 
+.center-align h1 {
+  text-align: center;
+}
 
+/*Browse Movies Section CSS*/
+.browse-header {
+  padding: 5vh 0;
+}
+
+.header-container-input {
+  display: flex;
+  justify-content: center;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.input-group {
+  width: 150% !important;
+}
+
+form {
+  width: 100%;
+  justify-content: center;
+}
+
+form input {
+  font-family: DejaVu,Serif,Condensed,sans-serif;
+}
+
+.header-container button {
+  color: #ffffff;
+}
+
+button.dropdown-toggle {
+  text-decoration: none;
+  background: none;
+  width: 100%;
+}
+
+.items {
+  display: flex;
+}
+
+.header-container .submit {
+  float: right;
+  background: #007bff;
+}
+
+.header-container button:hover {
+  background: #4adada;
+}
+
+.browse-card {
+  padding: 3vh;
+}
+
+.emoji {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.emojiIcon {
+  display: flex;
+  justify-content: center;
+}
+
+.emojiIcon, .locator {
+  padding: 2vh;
+}
+
+.locator .list-color {
+  background: #e4e6ed;
+}
+
+hr {
+  display: block;
+  border-top: 1px solid #ccc;
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-body h3 {
+  font-family: DejaVu,Serif,Condensed,sans-serif;
+  text-decoration: underline;
+}
+
+.image-align {
+  justify-content: center;
+  display: flex;
+
+}
+
+.movieContainer {
+  /*display: flex;*/
+}
 
 
 

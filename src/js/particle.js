@@ -1,10 +1,10 @@
 const particlesOpt = {
     "particles": {
         "number": {
-            "value": 350,
+            "value": 150,
             "density": {
                 "enable": true,
-                "value_area": 800
+                "value_area": 1000
             }
         },
         "color": {
@@ -30,7 +30,7 @@ const particlesOpt = {
             "random": false,
             "anim": {
                 "enable": false,
-                "speed": 1,
+                "speed": 0.7,
                 "opacity_min": 0.1,
                 "sync": false
             }
@@ -46,9 +46,9 @@ const particlesOpt = {
             }
         },
         "line_linked": {
-            "enable": true,
+            "enable": false,
             "distance": 150,
-            "color": "#1b1924",
+            "color": "#fff",
             "opacity": 0.4,
             "width": 1
         },

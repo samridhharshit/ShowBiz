@@ -9,6 +9,8 @@ import {faUserNinja, faSearch} from "@fortawesome/free-solid-svg-icons";
 
 import { Card, CardTitle, CardHeader, CardImg } from 'reactstrap';
 
+import {Link} from "react-router-dom";
+
 import card_image from '../images/infinity-war.jpeg';
 
 class Intro extends React.Component {
@@ -22,7 +24,7 @@ class Intro extends React.Component {
                     <div className="row navigation">
                         <div className="col-md-4 col-sm-12 logo">
                             <div>
-                                <FontAwesomeIcon icon={faUserNinja} size="5x" />
+                                <FontAwesomeIcon icon={faUserNinja} size="4x" />
                             </div>
                         </div>
                         <div className="col-md-8 col-sm-12 navigation-container">
@@ -30,16 +32,16 @@ class Intro extends React.Component {
                             <input type="text" name="Search Movies" placeholder="Quick Search" />
                             <FontAwesomeIcon icon={faSearch} />
                             </div>
-                            <Button>Browse Movies</Button>
-                            <Button>Bookmarks</Button>
+                            <Button><Link to="/browse-movies">Browse Movies</Link></Button>
                             <div className="account dropdown">
-                                <Button><a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button"
-                                   aria-haspopup="true" aria-expanded="false">Account</a></Button>
+                                <Button><Link to="#" className="dropdown-toggle" data-toggle="dropdown" role="button"
+                                   aria-haspopup="true" aria-expanded="false">Account</Link></Button>
                                 <div className="dropdown-menu">
-                                    <li><a href="#">Profile</a></li>
-                                    <li><a href="#">WishList</a></li>
-                                    <li><a href="#">Cart</a></li>
-                                    <li><a href="#">Ordered</a></li>
+                                    {/*add id of each profile before redirection*/}
+                                    <button><Link to="/profile">Profile</Link></button>
+                                    <button><Link to="/wishList">WishList</Link></button>
+                                    <button><Link to="/cart">Cart</Link></button>
+                                    <button><Link to="/ordered">Ordered</Link></button>
                                 </div>
                             </div>
                         </div>
